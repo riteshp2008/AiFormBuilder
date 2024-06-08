@@ -30,7 +30,7 @@ function Hero() {
                 className="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-black focus:outline-none focus:ring active:bg-blue-950 sm:w-auto"
                 onClick={() => {
                   if (isSignedIn) {
-                    router.push("/create");
+                    router.push("/dashboard/");
                   } else {
                     router.push("/sign-in");
                   }
