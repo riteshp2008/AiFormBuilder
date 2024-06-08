@@ -65,8 +65,9 @@ export default function Page() {
               </h1>
 
               <p className="mt-4 leading-relaxed text-gray-500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
+                Create your AI form in seconds. Just fill out the form and we
+                will create the form for you. You can use the form to collect
+                data from your users.
               </p>
             </div>
 
