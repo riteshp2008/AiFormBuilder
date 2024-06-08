@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "AI Form Builder",
-  favicon: "./logo2.png",
+  favicon: "./favicon.ico",
   description:
     "Create your AI form in seconds. Just fill out the form and we will create the form for you. You can use the form to collect data from your users.",
   type: "website",
