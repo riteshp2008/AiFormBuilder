@@ -20,8 +20,9 @@ function Hero() {
             </h1>
 
             <p className="mt-4 sm:text-xl/relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              illo tenetur fuga ducimus numquam ea!
+              Create your AI form in seconds. Just fill out the form and we will
+              create the form for you. You can use the form to collect data from
+              your users.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
