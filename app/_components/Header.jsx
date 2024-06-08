@@ -14,7 +14,15 @@ function Header() {
     !path.includes("aiform") && (
       <div className="p-5 border-b shadow-sm">
         <div className="flex items-center justify-between">
-          <Image src={"/logo.svg"} alt="logo" width={150} height={50} />
+          <Image
+            src={"/logo.svg"}
+            alt="Form Builder"
+            width={150}
+            height={50}
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          />
           {isSignedIn ? (
             <div className="flex items-center gap-5">
               <Link href={"/dashboard"}>
