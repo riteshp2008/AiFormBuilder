@@ -1,6 +1,11 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
+import { useUser } from "@clerk/nextjs";
 
 function Hero() {
+  const { isSignedIn } = useUser();
+  const router = useRouter();
   return (
     <div>
       <section className="bg-gray-50">
@@ -20,12 +25,18 @@ function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
+              <button
                 className="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-black focus:outline-none focus:ring active:bg-blue-950 sm:w-auto"
-                href="#"
+                onClick={() => {
+                  if (isSignedIn) {
+                    router.push("/create");
+                  } else {
+                    router.push("/sign-in");
+                  }
+                }}
               >
                 + Create AI Form
-              </a>
+              </button>
 
               <a
                 className="block w-full rounded px-12 py-3 text-sm font-medium text-blue-600 shadow hover:text-black focus:outline-none focus:ring active:text-blue-950 sm:w-auto"
